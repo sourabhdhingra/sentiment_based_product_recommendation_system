@@ -35,10 +35,10 @@ class LRModel:
 class Model:
     
     def __init__(self):
-        self.lr_clf_pipeline = joblib.load('logistic_user_sentiment_classifer_pipeline.sav')
-        self.user_based_recommender = joblib.load('user_based_recommender.sav')
-        self.username_bidict = joblib.load('username_bidict.sav')
-        self.master_data = joblib.load('master_data.sav')
+        self.lr_clf_pipeline = joblib.load(open('logistic_user_sentiment_classifer_pipeline.sav','rb') )
+        self.user_based_recommender = joblib.load(open('user_based_recommender.sav', 'rb'))
+        self.username_bidict = joblib.load(open('username_bidict.sav', 'rb'))
+        self.master_data = joblib.load(open('master_data.sav', 'rb'))
     
     def get_user_id(self, username):
         '''
@@ -96,10 +96,3 @@ class Model:
         else:
             return row['pred_user_sentiment']
 
-
-# if __name__ == '__main__':
-#     model = Model()
-#     # print(model.username_bidict.inverse.keys
-#     user_id = model.get_user_id('samantha')
-#     product_ids = model.get_top_20_recommendations(user_id)
-#     print(model.filter_top_5_recommendations(product_ids)) 
