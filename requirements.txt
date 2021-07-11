@@ -1,4 +1,3 @@
-Cython==0.28.5
 bidict==0.21.2
 Flask==2.0.1
 numpy==1.19.5
