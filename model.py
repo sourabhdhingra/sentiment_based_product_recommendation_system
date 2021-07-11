@@ -7,7 +7,7 @@ import math
 class Model:
     
     def __init__(self):
-        self.lr_clf_pipeline = joblib.load('logistic_user_sentiment_classifer_pipeline.sav')
+        # self.lr_clf_pipeline = joblib.load('logistic_user_sentiment_classifer_pipeline.sav')
         self.user_based_recommender = joblib.load('user_based_recommender.sav')
         self.username_bidict = joblib.load('username_bidict.sav')
         self.master_data = joblib.load('master_data.sav')
