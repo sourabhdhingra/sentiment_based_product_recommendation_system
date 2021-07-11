@@ -1,7 +1,8 @@
+Cython==0.28.5
 bidict==0.21.2
 Flask==2.0.1
 numpy==1.19.5
 pandas==1.1.5
-scikit-learn==00.22.2.post1
 joblib==1.0.1
 gunicorn==20.0.4
+scikit-learn==00.22.2.post1
