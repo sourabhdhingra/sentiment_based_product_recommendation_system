@@ -20,21 +20,35 @@
                     <h5 class="card-title">About Product Recommendation System</h5>
                     <p class="card-text">This is a sentiment based product Product Recommendation System. It will recommend you the best top 5 suited products as per your purchase history.
                     </p>
-                    <a href="#" class="btn btn-primary">Try it out by entering username!</a>
+                    <span class="input-group-text" >Try it out by entering the <br>username on the right!</span>
                 </div>
                 </div>
           </div>
           <div class="col">
             <form action="/predict" method="GET">
               <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">Enter</span>
-                <input type="text" class="form-control" placeholder="username" id="username" name="username" aria-label="username" aria-describedby="basic-addon1">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td><label style="color: red;">{{ input_error }}</label></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="text" class="form-control" placeholder="username" id="username" name="username" aria-label="username" aria-describedby="basic-addon1">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div> 
             </form>       
           </div>
           <div class="col">
-            <h5>Your product recommendations</h5>
+            <h5 class="input-group-text">Your product recommendations</h5>
             <table border="1">
               <thead>
                   <tr>
