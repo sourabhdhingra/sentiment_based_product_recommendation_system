@@ -1,6 +1,6 @@
 # Sentiment Based Product Recommendation System
 <p>
-This is a product recommendation system generally used by e-commerce websites implemented as a part of my capstone project - IIITB-upgrad. The whole project is deployed at [here](https://prod-recommender-app.herokuapp.com/) 🙂
+This is a product recommendation system generally used by e-commerce websites implemented as a part of my capstone project - IIITB-upgrad. The whole project is deployed at https://prod-recommender-app.herokuapp.com/   🙂
 </p>
 
 ### Repository Content
